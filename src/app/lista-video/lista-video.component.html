@@ -1,0 +1,30 @@
+<div style="display: flex; gap: 1rem">
+    <div *ngFor="let v of videos" class="video">
+    <iframe width="560" height="315" [src]="safeUrls[videos.indexOf(v)]" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+</div>
+</div>
+<hr>
+<ul>
+    <li *ngFor="let v of videos">
+        <a [href]="v.url" target="_blank">
+            {{v.titolo}}
+        </a>
+    </li>
+    <!-- la stessa cosa posso farla con l'interpolazione della proprietà, anzichè andando a leggere la variabile come fatto nella modalità sopra:
+            <li *ngFor="let v of videos">
+            <a href={{v.url}} target="_blank">
+            {{v.titolo}}
+            </a>
+        </li> -->
+</ul>
+<hr>
+
+<h3 *ngFor="let video of videos">
+    {{video.titolo}}
+</h3>
+<hr>
+
+<!-- 
+</div> -->

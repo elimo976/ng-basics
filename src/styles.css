@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: navy;
+    color: pink;
+    width: 100%;
+    padding: 1rem;
+}
+.video {
+    width: 560px;
+    height: 315px;
+    margin: 10px 0 10px 0;
+}
