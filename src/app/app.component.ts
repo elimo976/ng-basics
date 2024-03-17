@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  numero?: number = 8; // ? è nullable, sinonimo di undefined
+  numero?: number = 3; // ? è nullable, sinonimo di undefined
 
   //title: string = 'ng-basics';
 
-  public title: string = "Pippo!!!"; // public: tutte le proprietà e i metodi verranno riconosciute anche fuori dalla classe dove si trova e l'html potrà accdedervi. Se non indicato, è sottinteso
+  public title: string = "Soundtrack by Hans Zimmer"; // public: tutte le proprietà e i metodi verranno riconosciute anche fuori dalla classe dove si trova e l'html potrà accdedervi. Se non indicato, è sottinteso
   // (string) se non tipizzo, ts lo assegna da solo. Cfr. inference
   private apiKey = "asdasdasdasd"; //quando voglio tenermi qualcosa che sia accessibile solo dalla mia classe. NO altre classi, NO da html. P.es. con chiamata ajax con apiKey
   ok: number | boolean = 0;

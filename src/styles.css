@@ -3,17 +3,20 @@
     box-sizing: border-box;
 }
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 header {
-    background-color: navy;
-    color: pink;
+    background-color: #ebc426;
+    color: #a03cab;
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
 }
 .video {
     width: 560px;
     height: 315px;
     margin: 10px 0 10px 0;
+}
+.container {
+    margin: 2rem 2rem;
 }

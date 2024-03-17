@@ -1,34 +1,32 @@
 <app-intestazione></app-intestazione>
-<h1>{{ title }}</h1>
-<!-- <input id="inputTitolo" type="text" [value]="title"/> // binding oneway-->
-
-<!-- <input type="text" (ngModel)="title"/>  // cfr. commento sotto -->
-
-<input type="text" [(ngModel)]="title"/> <!-- // Two-Way Binding.
-    Con le [] aggiorniamo la variabile dall'input;
-    con () è l'inverso;
-    con [()] facciamo entrambe le cose-->
-
-
-<!-- <button type="button" (click)="aggiornaTitolo()">Aggiorna titolo</button> -->
-<hr>
-<h1 *ngIf="numero">Numero: {{numero}}
-    <ul>
-       <li>1</li>
-       <li>2</li>
-    </ul>
-</h1>
-<hr />
-
-<button type="button" (click)="togglePreferiti()">{{ preferitiVisibili ? "Nascondi" : "Mostra" }} preferiti</button>
-<div *ngIf="preferitiVisibili">
-    <h3 pippo="4">Preferiti</h3> <!-- pippo="4" si scrive come un attributo di un tag, è una direttiva -->
-    <app-lista-video></app-lista-video>
-</div>
-
-<div>
-    <h3>Raccomandati</h3>
-    <app-lista-video></app-lista-video>
+<div class="container">
+    <h2>{{ title }}</h2>
+    <!-- <input id="inputTitolo" type="text" [value]="title"/> // binding oneway-->
+    
+    <!-- <input type="text" (ngModel)="title"/>  // cfr. commento sotto -->
+    
+    <input type="text" [(ngModel)]="title"/> <!-- // Two-Way Binding.
+        Con le [] aggiorniamo la variabile dall'input;
+        con () è l'inverso;
+        con [()] facciamo entrambe le cose-->
+    
+    
+    <!-- <button type="button" (click)="aggiornaTitolo()">Aggiorna titolo</button> -->
+    <hr>
+    <h3 *ngIf="numero">Numero: {{numero}} filmati
+    </h3>
+    <hr />
+    
+    <button type="button" (click)="togglePreferiti()">{{ preferitiVisibili ? "Nascondi" : "Mostra" }} preferiti</button>
+    <div *ngIf="preferitiVisibili">
+        <h3 pippo="4">Preferiti</h3> <!-- pippo="4" si scrive come un attributo di un tag, è una direttiva -->
+        <app-lista-video></app-lista-video>
+    </div>
+    
+    <div>
+        <h3>Raccomandati</h3>
+        <app-lista-video></app-lista-video>
+    </div>
 </div>
 
 
